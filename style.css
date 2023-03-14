@@ -1,0 +1,66 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
+
+:root{
+    --font-family: 'Montserrat', sans-serif;
+    --font-color: aliceblue;
+    --bg-color: linear-gradient(to left top, #ffbe69a9, #cf4f00af, #c700388e, #111d5e77);
+    --bg-cells: #F7A76C;
+}
+
+body{
+    font-family: var(--font-family);
+    color: var(--font-color);
+    background: var(--bg-color);
+    height: 100vh;
+    overflow: hidden;
+}
+.wrapper{
+    display: grid;
+    place-items: center;
+    text-align: center;
+}
+.title{
+    font-size: 70px;
+    margin: 20px auto 30px auto;
+    color: white;
+}
+.container{
+    display: grid;
+    grid-template-columns: repeat(3, auto);
+    color: white;
+}
+.cell{
+    width: 120px;
+    height: 120px;
+    background: var(--bg-cells);
+    border-radius: 30px;
+    border: none;
+    cursor: pointer;
+    line-height: 120px;
+    font-size: 80px;
+    font-family: sans-serif;
+    font-weight: bold;
+    box-shadow: rgba(0, 0, 0, 0.3) 0px 19px 38px;
+}
+.status{
+    font-size: 70px;
+    color: white;
+    margin: 40px auto 20px auto;
+}
+.restart{
+    font-family: var(--font-family);
+    padding: 10px;
+    font-size: 45px;
+    color: var(--font-color);
+    background: none;
+    border: none;
+    cursor: pointer;
+}
+
+#scoreboard{
+    display: flex;
+    gap: 15px;
+    justify-content: center;
+    align-items: center;
+    margin: 15px;
+}
